@@ -1,28 +1,28 @@
-﻿扰动条件,模型,AUC 下降
-情绪遮蔽 20%,原始情绪知识追踪模型,0.038239 ± 0.001755
-情绪遮蔽 40%,原始情绪知识追踪模型,0.076146 ± 0.004606
-情绪遮蔽 60%,原始情绪知识追踪模型,0.110970 ± 0.007962
-情绪错配 20%,原始情绪知识追踪模型,0.046853 ± 0.000719
-情绪错配 40%,原始情绪知识追踪模型,0.091221 ± 0.000838
-情绪错配 60%,原始情绪知识追踪模型,0.135469 ± 0.001497
-情绪加噪 0.05,原始情绪知识追踪模型,0.157296 ± 0.008645
-情绪加噪 0.10,原始情绪知识追踪模型,0.160033 ± 0.009369
-情绪加噪 0.20,原始情绪知识追踪模型,0.162636 ± 0.009772
-情绪遮蔽 20%,组合鲁棒训练模型（增强方案）,0.007675 ± 0.000215
-情绪遮蔽 40%,组合鲁棒训练模型（增强方案）,0.018045 ± 0.000489
-情绪遮蔽 60%,组合鲁棒训练模型（增强方案）,0.030863 ± 0.000865
-情绪错配 20%,组合鲁棒训练模型（增强方案）,0.018366 ± 0.000353
-情绪错配 40%,组合鲁棒训练模型（增强方案）,0.037952 ± 0.000579
-情绪错配 60%,组合鲁棒训练模型（增强方案）,0.060253 ± 0.000787
-情绪加噪 0.05,组合鲁棒训练模型（增强方案）,0.037073 ± 0.000743
-情绪加噪 0.10,组合鲁棒训练模型（增强方案）,0.039424 ± 0.000768
-情绪加噪 0.20,组合鲁棒训练模型（增强方案）,0.043861 ± 0.000868
-情绪遮蔽 20%,情绪稳定训练模型（建议主方法）,0.013557 ± 0.000290
-情绪遮蔽 40%,情绪稳定训练模型（建议主方法）,0.026447 ± 0.000294
-情绪遮蔽 60%,情绪稳定训练模型（建议主方法）,0.037270 ± 0.000347
-情绪错配 20%,情绪稳定训练模型（建议主方法）,0.027257 ± 0.001241
-情绪错配 40%,情绪稳定训练模型（建议主方法）,0.053354 ± 0.002058
-情绪错配 60%,情绪稳定训练模型（建议主方法）,0.079296 ± 0.002754
-情绪加噪 0.05,情绪稳定训练模型（建议主方法）,0.046133 ± 0.001214
-情绪加噪 0.10,情绪稳定训练模型（建议主方法）,0.050152 ± 0.001073
-情绪加噪 0.20,情绪稳定训练模型（建议主方法）,0.057526 ± 0.000705
+Perturbation condition,Model,AUC drop
+Affect masking 20%,Original affective KT model,0.038239 ± 0.001755
+Affect masking 40%,Original affective KT model,0.076146 ± 0.004606
+Affect masking 60%,Original affective KT model,0.110970 ± 0.007962
+Affect mismatch 20%,Original affective KT model,0.046853 ± 0.000719
+Affect mismatch 40%,Original affective KT model,0.093004 ± 0.004359
+Affect mismatch 60%,Original affective KT model,0.162636 ± 0.009772
+Affect noise 0.05,Original affective KT model,0.042854 ± 0.002319
+Affect noise 0.10,Original affective KT model,0.090917 ± 0.005473
+Affect noise 0.20,Original affective KT model,0.141820 ± 0.003752
+Affect masking 20%,Stability training,0.022437 ± 0.002012
+Affect masking 40%,Stability training,0.043442 ± 0.001476
+Affect masking 60%,Stability training,0.064434 ± 0.001594
+Affect mismatch 20%,Stability training,0.025160 ± 0.001419
+Affect mismatch 40%,Stability training,0.049900 ± 0.002035
+Affect mismatch 60%,Stability training,0.079296 ± 0.002754
+Affect noise 0.05,Stability training,0.024693 ± 0.000758
+Affect noise 0.10,Stability training,0.049605 ± 0.001547
+Affect noise 0.20,Stability training,0.078645 ± 0.002434
+Affect masking 20%,Combined robust training,0.017836 ± 0.001092
+Affect masking 40%,Combined robust training,0.032868 ± 0.001116
+Affect masking 60%,Combined robust training,0.047327 ± 0.000393
+Affect mismatch 20%,Combined robust training,0.019055 ± 0.000513
+Affect mismatch 40%,Combined robust training,0.037370 ± 0.000557
+Affect mismatch 60%,Combined robust training,0.060253 ± 0.000787
+Affect noise 0.05,Combined robust training,0.019112 ± 0.000377
+Affect noise 0.10,Combined robust training,0.038048 ± 0.000484
+Affect noise 0.20,Combined robust training,0.057817 ± 0.000859

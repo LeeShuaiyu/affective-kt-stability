@@ -22,13 +22,7 @@ PERTURBATION_LABELS = {
 
 
 def mark_main_method(frame: pd.DataFrame, main_model: str) -> pd.DataFrame:
-    frame = frame.copy()
-    if "model" in frame and "paper_name" in frame:
-        mask = frame["model"] == main_model
-        frame.loc[mask, "paper_name"] = frame.loc[mask, "paper_name"].astype(str).map(
-            lambda text: text if "本文方法" in text else f"{text} (本文方法)"
-        )
-    return frame
+    return frame.copy()
 
 
 def parse_args() -> argparse.Namespace:

@@ -11,9 +11,6 @@ METRICS = ["auc", "accuracy", "nll", "brier", "ece"]
 
 
 def paper_name(model: object, fallback: object) -> object:
-    if model == "dekt_combined_robust":
-        text = str(fallback)
-        return text if "本文方法" in text else f"{text} (本文方法)"
     return fallback
 
 

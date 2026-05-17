@@ -1,2 +1,2 @@
-﻿数据集,正常 AUC,最大扰动下降,鲁棒得分,论文解释
-ASSISTments 2012 固定子集,0.789706 ± 0.001276,0.000257 ± 0.000412,0.789450 ± 0.001153,低情绪依赖边界证据
+Dataset,Clean AUC,Maximum AUC drop,Robust score,Interpretation
+ASSISTments 2012 fixed subset,0.789706 ± 0.001276,0.000257 ± 0.000412,0.789450 ± 0.001153,Low affect-dependence boundary evidence

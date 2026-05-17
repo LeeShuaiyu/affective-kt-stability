@@ -62,26 +62,11 @@ MODEL_CONFIGS = {
         "train_perturbation_rate": None,
     },
     "dekt_combined_robust": {
-        "paper_name": "DEKT with input affect masking and stability objective (本文方法)",
+        "paper_name": "DEKT with input affect masking and stability objective",
         "reliability_mode": "off",
         "stability_weight": None,
         "train_perturbation": "mask",
         "train_perturbation_rate": None,
-    },
-    "trusted_affect": {
-        "paper_name": "Reliability-Calibrated Affective Knowledge Tracing",
-        "reliability_mode": "learned",
-        "stability_weight": None,
-    },
-    "fixed_half": {
-        "paper_name": "Fixed reliability control",
-        "reliability_mode": "fixed_half",
-        "stability_weight": None,
-    },
-    "trusted_no_stability": {
-        "paper_name": "Reliability gate without stability objective",
-        "reliability_mode": "learned",
-        "stability_weight": 0.0,
     },
     "dkt": {
         "paper_name": "DKT",
@@ -114,7 +99,7 @@ def parse_list(text: str) -> list[str]:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Run the reliability-calibrated affective knowledge tracing plan.")
+    parser = argparse.ArgumentParser(description="Run the stability-oriented affective knowledge tracing plan.")
     parser.add_argument("--output-root", default=str(REPO_ROOT / "reports" / "reliability_kt_20260503"))
     parser.add_argument("--datasets", default="challenge")
     parser.add_argument("--models", default="dekt,dekt_stability,dekt_generic_robust,dkt")
@@ -355,7 +340,6 @@ def main() -> None:
     output_root = Path(args.output_root).resolve()
     (output_root / "checkpoints").mkdir(parents=True, exist_ok=True)
     (output_root / "metrics").mkdir(parents=True, exist_ok=True)
-    (output_root / "rho_records").mkdir(parents=True, exist_ok=True)
     (output_root / "logs").mkdir(parents=True, exist_ok=True)
 
     datasets = parse_list(args.datasets)
@@ -379,7 +363,7 @@ def main() -> None:
                 checkpoint_path = output_root / "checkpoints" / f"{tag}.pt"
                 metrics_path = output_root / "metrics" / f"{tag}_clean.json"
                 log_path = output_root / "logs" / f"{tag}_clean.log"
-                rho_record_path = output_root / "rho_records" / f"{tag}_clean.csv" if model_name == "trusted_affect" else None
+                rho_record_path = None
                 command = main_command(
                     args,
                     dataset_name,
